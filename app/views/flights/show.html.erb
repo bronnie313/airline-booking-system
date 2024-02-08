@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @flight %>
+<%= render :partial=>"new_seat" %>
 
 <div>
   <%= link_to "Edit this flight", edit_flight_path(@flight) %> |

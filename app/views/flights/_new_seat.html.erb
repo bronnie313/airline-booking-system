@@ -1,6 +1,6 @@
 <h1>New seat</h1>
 
-<%= render "seat_form", seat: Seat.new %>
+<%= render "seat_form", seat: Seat.new(flight_id: @flight.id) %>
 
 <br>
 

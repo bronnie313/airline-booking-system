@@ -1,0 +1,24 @@
+<h2>List of seats</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Baggage</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for seat in seats %>
+            <tr>
+                <td><%=h seat.name %></td>
+                <td><%=h seat.baggage %></td>
+                <td>
+                    <%= link_to "Show this seat", seat %>
+                    <%= link_to 'Edit', edit_seat_path(seat) %>
+                    <%= button_to "Destroy this seat", seat, method: :delete %>
+                </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

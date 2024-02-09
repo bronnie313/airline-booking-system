@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @flight %>
+
+<%= render 'seats_list', seats: @flight.seats %>
+
 <%= render :partial=>"new_seat" %>
 
 <div>

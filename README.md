@@ -49,9 +49,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Health-Club] <a name="about-project"></a>
+# 📖 [Flight Booking System] <a name="about-project"></a>
 
-Web application that enables personal trainers to quickly and easily manage the workouts for each client.
+This is an online reservation system that helps to manage the flight and seat bookings for an airline.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -81,7 +81,7 @@ Web application that enables personal trainers to quickly and easily manage the 
 ### Key Features <a name="key-features"></a>
 
 - **CRUD Operations**
-- **Search Functionality**
+- **Flight booking functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +115,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder: ` @https://github.com/bronnie313/health-club.git `
+Clone this repository to your desired folder: ` @https://github.com/bronnie313/airline-booking-system.git `
 
 <!--
 Example commands:
@@ -128,7 +128,7 @@ Example commands:
 
  ### Install
 
-Install this project with: ` cd health-club  `
+Install this project with: ` cd airline-booking-system  `
 ` gem install `
 
 <!--
@@ -164,9 +164,9 @@ Example command:
 ```
 --->
 
-<!-- ### Deployment
+### Deployment
 
-You can deploy this project using: -->
+You can deploy this project using: ` render or heroku `
 
 <!--
 Example:
@@ -204,7 +204,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/bronnie313/health-club/issues).
+Feel free to check the [issues page](https://github.com/bronnie313/airline-booking-system/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

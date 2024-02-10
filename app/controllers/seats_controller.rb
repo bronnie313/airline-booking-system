@@ -1,5 +1,5 @@
 class SeatsController < ApplicationController
-  before_action :set_seat, only: %i[ show edit update destroy ]
+  before_action :set_seat, only: %i[show edit update destroy]
 
   # GET /seats or /seats.json
   def index
@@ -7,8 +7,7 @@ class SeatsController < ApplicationController
   end
 
   # GET /seats/1 or /seats/1.json
-  def show
-  end
+  def show; end
 
   # GET /seats/new
   def new
@@ -16,8 +15,7 @@ class SeatsController < ApplicationController
   end
 
   # GET /seats/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /seats or /seats.json
   def create
@@ -25,7 +23,7 @@ class SeatsController < ApplicationController
 
     respond_to do |format|
       if @seat.save
-        format.html { redirect_to seat_url(@seat), notice: "Seat was successfully created." }
+        format.html { redirect_to seat_url(@seat), notice: 'Seat was successfully created.' }
         format.json { render :show, status: :created, location: @seat }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +36,7 @@ class SeatsController < ApplicationController
   def update
     respond_to do |format|
       if @seat.update(seat_params)
-        format.html { redirect_to seat_url(@seat), notice: "Seat was successfully updated." }
+        format.html { redirect_to seat_url(@seat), notice: 'Seat was successfully updated.' }
         format.json { render :show, status: :ok, location: @seat }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +50,20 @@ class SeatsController < ApplicationController
     @seat.destroy
 
     respond_to do |format|
-      format.html { redirect_to seats_url, notice: "Seat was successfully destroyed." }
+      format.html { redirect_to seats_url, notice: 'Seat was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_seat
-      @seat = Seat.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def seat_params
-      params.require(:seat).permit(:flight_id, :name, :baggage)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_seat
+    @seat = Seat.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def seat_params
+    params.require(:seat).permit(:flight_id, :name, :baggage)
+  end
 end

@@ -66,7 +66,7 @@ This is an online reservation system that helps to manage the flight and seat bo
 <details>
 <summary>Ruby on Rails</summary>
   <ul>
-    <li><a href="https://www.rubyonrails.org/">Ruby on Rails</a></li>
+    <li><a href="https://guides.rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 <details>

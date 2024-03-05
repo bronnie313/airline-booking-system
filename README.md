@@ -82,7 +82,7 @@ This is an online reservation system that helps to manage the flight and seat bo
 
 - **CRUD Operations**
 - **Flight booking functionality**
-- **Ajax feature**
+- **Ajax Feature**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
